@@ -1,3 +1,5 @@
+package main.binarysearch
+
 fun main() {
 
     val array = arrayOf(1, 2, 5, 8, 11, 12, 18, 20)
@@ -7,7 +9,7 @@ fun main() {
 }
 
 fun findTargetIndexSortedArray(array: Array<Int>, target: Int): Int {
-    var left = 0;
+    var left = 0
     var right = array.size - 1
 
     while (left <= right) {
