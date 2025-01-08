@@ -1,4 +1,5 @@
 import array.containsDuplicate
+import array.merge
 import array.sortedSquares
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -6,6 +7,6 @@ import array.sortedSquares
 fun main() {
     val array = intArrayOf(2, 1, 3, 4, 6, 9)
     val target = 4
-    val sum = sortedSquares(nums = array)
-    println(sum)
+
+
 }
