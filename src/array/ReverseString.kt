@@ -5,9 +5,7 @@ fun reverseString(s: CharArray): Unit {
     var left = 0
 
     while (left < right) {
-        val temp = s[right]
-        s[right] = s[left]
-        s[left] = temp
+        s[right] = s[left].also { s[left] = s[right] }
         right--
         left++
     }
