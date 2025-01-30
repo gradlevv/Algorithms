@@ -1,5 +1,4 @@
-import array.findMaxAverage
-import array.findNumbers
+import array.reverseString
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -7,6 +6,6 @@ import array.findNumbers
 fun main() {
 
     val array = intArrayOf(12,345,2,6,78963)
-
-    println(findNumbers(array))
+    val s = charArrayOf('h','e','z','l','o')
+    reverseString(s)
 }
