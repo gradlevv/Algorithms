@@ -1,4 +1,5 @@
 import array.reverseString
+import string.isPalindrome
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -7,5 +8,6 @@ fun main() {
 
     val array = intArrayOf(12,345,2,6,78963)
     val s = charArrayOf('h','e','z','l','o')
-    reverseString(s)
+    val string = "A man, a plan, a canal: Panama"
+    println(isPalindrome(string))
 }
