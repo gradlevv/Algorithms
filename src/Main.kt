@@ -1,6 +1,4 @@
 import array.findLengthOfLCIS
-import array.reverseString
-import string.isPalindrome
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
