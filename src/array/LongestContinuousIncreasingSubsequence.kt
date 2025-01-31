@@ -2,8 +2,7 @@ package array
 
 fun findLengthOfLCIS(nums: IntArray): Int {
 
-    if (nums.isEmpty()) return 0
-    if (nums.size == 1) return 1
+    if (nums.size <= 1) return nums.size
 
     var currentLength = 1
     var maxLength = 1
@@ -14,10 +13,7 @@ fun findLengthOfLCIS(nums: IntArray): Int {
         } else {
             currentLength = 1
         }
-
-        if (currentLength > maxLength) {
-            maxLength = currentLength
-        }
+        maxLength = maxOf(maxLength, currentLength)
     }
 
     return maxLength
