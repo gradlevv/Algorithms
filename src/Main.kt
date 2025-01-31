@@ -1,3 +1,4 @@
+import array.findLengthOfLCIS
 import array.reverseString
 import string.isPalindrome
 
@@ -6,8 +7,8 @@ import string.isPalindrome
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    val array = intArrayOf(12,345,2,6,78963)
+    val array = intArrayOf(1,3,5,4,7)
     val s = charArrayOf('h','e','z','l','o')
     val string = "A man, a plan, a canal: Panama"
-    println(isPalindrome(string))
+    println(findLengthOfLCIS(array))
 }
