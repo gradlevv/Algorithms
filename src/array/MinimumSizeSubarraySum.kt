@@ -13,8 +13,6 @@ fun minSubArrayLen(target: Int, nums: IntArray): Int {
             left++
         }
     }
-    if (minimum == Int.MAX_VALUE)
-        minimum = 0
+    return if (minimum == Int.MAX_VALUE) 0 else minimum
 
-    return minimum
 }
