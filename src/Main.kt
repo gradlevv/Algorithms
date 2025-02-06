@@ -1,13 +1,11 @@
-import array.findLengthOfLCIS
-import array.twoSumII
-
+import array.maxProfit
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    val array = intArrayOf(2,7,11,15)
+    val array = intArrayOf(7, 1, 5, 3, 6, 4)
     val s = charArrayOf('h', 'e', 'z', 'l', 'o')
     val string = "A man, a plan, a canal: Panama"
-    println(twoSumII(array,9).toList().toString())
+    println(maxProfit(array))
 }
