@@ -1,4 +1,5 @@
 import array.maxProfit
+import string.firstUniqChar
 import string.lengthOfLongestSubstring
 import string.validPalindrome
 
@@ -8,6 +9,6 @@ fun main() {
 
     val array = intArrayOf(7, 1, 5, 3, 6, 4)
     val s = charArrayOf('h', 'e', 'z', 'l', 'o')
-    val string = "abca"
-    println(validPalindrome(string))
+    val string = "loveleetcode"
+    println(firstUniqChar(string))
 }
