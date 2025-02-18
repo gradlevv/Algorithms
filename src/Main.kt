@@ -1,3 +1,4 @@
+import array.intersection
 import array.maxProfit
 import string.firstUniqChar
 import string.lengthOfLongestSubstring
@@ -7,8 +8,9 @@ import string.validPalindrome
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    val array = intArrayOf(7, 1, 5, 3, 6, 4)
+    val num1 = intArrayOf(1, 2, 2, 1)
+    val num2 = intArrayOf(2, 2)
     val s = charArrayOf('h', 'e', 'z', 'l', 'o')
     val string = "loveleetcode"
-    println(firstUniqChar(string))
+    println(intersection(num1, num2))
 }
