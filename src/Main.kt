@@ -2,6 +2,7 @@ import array.intersection
 import array.maxProfit
 import linked_list.ListNode
 import linked_list.deleteNode
+import linked_list.middleNode
 import linked_list.reverseList
 import string.firstUniqChar
 import string.lengthOfLongestSubstring
@@ -26,5 +27,5 @@ fun main() {
     node2.next = node3
     node3.next = node4
 
-    println(deleteNode(node1))
+    println(middleNode(node1))
 }
