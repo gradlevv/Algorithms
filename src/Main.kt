@@ -1,9 +1,6 @@
 import array.intersection
 import array.maxProfit
-import linked_list.ListNode
-import linked_list.deleteNode
-import linked_list.middleNode
-import linked_list.reverseList
+import linked_list.*
 import string.firstUniqChar
 import string.lengthOfLongestSubstring
 import string.validPalindrome
@@ -18,14 +15,14 @@ fun main() {
     val string = "loveleetcode"
 //    println(intersection(num1, num2))
 
-    val node1 = ListNode(4)
-    val node2 = ListNode(5)
-    val node3 = ListNode(1)
-    val node4 = ListNode(9)
+    val node1 = ListNode(1)
+    val node2 = ListNode(2)
+    val node3 = ListNode(2)
+    val node4 = ListNode(1)
 
     node1.next = node2
     node2.next = node3
     node3.next = node4
 
-    println(middleNode(node1))
+    println(isPalindrome(node1))
 }
