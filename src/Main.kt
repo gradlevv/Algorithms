@@ -1,5 +1,6 @@
 import array.intersection
 import array.maxProfit
+import array.searchInsert
 import linked_list.*
 import string.firstUniqChar
 import string.lengthOfLongestSubstring
@@ -9,7 +10,7 @@ import string.validPalindrome
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
 
-    val num1 = intArrayOf(1, 2, 2, 1)
+    val num1 = intArrayOf(1,3,5,6)
     val num2 = intArrayOf(2, 2)
     val s = charArrayOf('h', 'e', 'z', 'l', 'o')
     val string = "loveleetcode"
@@ -24,5 +25,5 @@ fun main() {
     node2.next = node3
     node3.next = node4
 
-    println(isPalindrome(node1))
+    println(searchInsert(num1,2))
 }
