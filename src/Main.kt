@@ -3,6 +3,7 @@ import array.maxProfit
 import array.searchInsert
 import binary_search.mySqrt
 import binary_search.search
+import binary_search.searchII
 import linked_list.*
 import string.firstUniqChar
 import string.lengthOfLongestSubstring
@@ -13,7 +14,7 @@ import string.validPalindrome
 fun main() {
 
     val num1 = intArrayOf(-1,0,3,5,9,12)
-    val num2 = intArrayOf(5)
+    val num2 = intArrayOf(5,1,2,3,4)
     val s = charArrayOf('h', 'e', 'z', 'l', 'o')
     val string = "loveleetcode"
 //    println(intersection(num1, num2))
@@ -27,5 +28,5 @@ fun main() {
     node2.next = node3
     node3.next = node4
 
-    println(mySqrt(900))
+    println(searchII(num2,1))
 }
