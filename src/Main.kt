@@ -1,6 +1,7 @@
 import array.intersection
 import array.maxProfit
 import array.searchInsert
+import binary_search.mySqrt
 import binary_search.search
 import linked_list.*
 import string.firstUniqChar
@@ -26,5 +27,5 @@ fun main() {
     node2.next = node3
     node3.next = node4
 
-    println(search(num2,5))
+    println(mySqrt(900))
 }
