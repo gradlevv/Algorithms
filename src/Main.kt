@@ -1,5 +1,7 @@
 import linked_list.*
 import queue.RecentCounter
+import tree.TreeNode
+import tree.levelOrder
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -23,9 +25,32 @@ fun main() {
 
     val recentCounter = RecentCounter()
     //[[], [1], [100], [3001], [3002]]
-    println(recentCounter.ping(1))
-    println(recentCounter.ping(100))
-    println(recentCounter.ping(3001))
-    println(recentCounter.ping(3002))
+//    println(recentCounter.ping(1))
+//    println(recentCounter.ping(100))
+//    println(recentCounter.ping(3001))
+//    println(recentCounter.ping(3002))
 
+    val root = TreeNode(3).apply {
+        left = TreeNode(9)
+        right = TreeNode(20).apply {
+            left = TreeNode(15)
+            right = TreeNode(7)
+        }
+    }
+
+    val root2= TreeNode(1).apply {
+        left = TreeNode(2)
+    }
+
+    val root3 = TreeNode(1).apply {
+        left = TreeNode(2).apply {
+            left = TreeNode(4)
+        }
+        right = TreeNode(3).apply {
+            right = TreeNode(5)
+        }
+    }
+
+    val result = levelOrder(root)
+    println(result.toString())
 }
