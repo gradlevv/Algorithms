@@ -1,6 +1,7 @@
 import linked_list.*
 import queue.RecentCounter
 import tree.TreeNode
+import tree.averageOfLevels
 import tree.levelOrder
 
 
@@ -30,27 +31,37 @@ fun main() {
 //    println(recentCounter.ping(3001))
 //    println(recentCounter.ping(3002))
 
+    //[3,9,20,null,null,15,7]
+
     val root = TreeNode(3).apply {
-        left = TreeNode(9)
+        left = TreeNode(9).apply {
+            left = null  // Explicitly shown (optional)
+            right = null
+        }
         right = TreeNode(20).apply {
+            left = TreeNode(15).apply {
+                left = null
+                right = null
+            }
+            right = TreeNode(7).apply {
+                left = null
+                right = null
+            }
+        }
+    }
+
+    val root2 = TreeNode(3).apply {
+        left = TreeNode(9).apply {
             left = TreeNode(15)
             right = TreeNode(7)
         }
+        right = TreeNode(20)
+    }
+    val root3 = TreeNode(2147483647).apply {
+        left = TreeNode(2147483647)
+        right = TreeNode(2147483647)
     }
 
-    val root2= TreeNode(1).apply {
-        left = TreeNode(2)
-    }
-
-    val root3 = TreeNode(1).apply {
-        left = TreeNode(2).apply {
-            left = TreeNode(4)
-        }
-        right = TreeNode(3).apply {
-            right = TreeNode(5)
-        }
-    }
-
-    val result = levelOrder(root)
+    val result = averageOfLevels(root3)
     println(result.toString())
 }
