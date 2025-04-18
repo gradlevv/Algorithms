@@ -1,5 +1,8 @@
 package graph
 
+import java.util.LinkedList
+import java.util.Queue
+
 fun cloneGraph(node: Node?): Node? {
     node ?: return null
     val map = mutableMapOf<Node, Node>()
@@ -17,6 +20,24 @@ fun helper(node: Node, map: MutableMap<Node, Node>): Node {
     return map.getValue(node)
 }
 
-class Node(var `val`: Int) {
-    var neighbors: ArrayList<Node?> = ArrayList()
+fun cloneGraphBFS(node: Node?): Node? {
+    node ?: return null
+    val map = mutableMapOf<Node, Node>()
+    val queue: Queue<Node> = LinkedList()
+    queue.add(node)
+    map[node] = Node(node.`val`)
+
+    while (queue.isNotEmpty()) {
+        val remove = queue.poll()
+        remove.neighbors.forEach {
+            if (map.containsKey(it).not()) {
+                it?.let {
+                    map[it] = Node(it.`val`)
+                    queue.add(it)
+                }
+            }
+            map.getValue(remove).neighbors.add(map[it])
+        }
+    }
+    return map[node]
 }
